@@ -1,0 +1,68 @@
+using System;
+
+public class HelloWorld
+{
+    public static double poleTrojkata(double a, double h)
+    {
+        return a*h/2;
+    }
+    
+    public static double poleKwadratu(double a)
+    {
+        return Math.Pow(a, 2);
+    }
+    
+    public static double poleTrapezu(double a, double b, double h)
+    {
+        return ((a + b)*h)/2;
+    }
+    
+    
+    public static double poleRownolegloboku(double a, double h)
+    {
+        return a*h;
+    }
+    
+    public static double poleRombu(double a, double h)
+    {
+        return a*h;
+    }
+    
+    public static double poleSzesciokata(double a)
+    {
+        return 6*((Math.Pow(a, 2)*Math.Sqrt(3))/4);
+    }
+    
+    public static double poleKola(double r)
+    {
+        return Math.PI*Math.Pow(r, 2);
+    }
+    
+    public static double poleWycinkaKolowego(double r, double alpha)
+    {
+        return (alpha/360)*Math.PI*Math.Pow(r, 2);
+    }
+    
+    public static double dlugoscOkregu(double r)
+    {
+        return 2*Math.PI*r;
+    }
+    
+    public static double dlugoscWycinkaOkregu(double r, double alpha)
+    {
+        return (alpha*(2*Math.PI*r))/360;
+    }
+    
+    public static void Main(string[] args){
+        Console.WriteLine(poleTrojkata(3,4));
+        Console.WriteLine(poleKwadratu(2));
+        Console.WriteLine(poleTrapezu(2, 3, 4));
+        Console.WriteLine(poleRownolegloboku(2, 3));
+        Console.WriteLine(poleRombu(2, 3));
+        Console.WriteLine(poleSzesciokata(2));
+        Console.WriteLine(poleKola(2));
+        Console.WriteLine(poleWycinkaKolowego(2, 3));
+        Console.WriteLine(dlugoscOkregu(2));
+        Console.WriteLine(dlugoscWycinkaOkregu(2, 3));
+    }
+}
